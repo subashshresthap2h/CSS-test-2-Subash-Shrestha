@@ -14,6 +14,10 @@
     />
     <link rel="stylesheet" href="./assets/vendors/icoomoon/style.css" />
     <link rel="stylesheet" href="./assets/vendors/fancybox/fancybox.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -21,14 +25,16 @@
     <noscript>Your browser does not support JavaScript!</noscript>
     <div class="wrapper" id="wrapper">
       <section class="notice-block pb-0">
-        <a href="#" class="notice__link">
-          Free Courses
-          <div class="notice__img">
-            <img src="./assets/images/star.png" alt="Star" />
-          </div>
-          Sale Ends Soon, Get It Now
-          <span class="icon-right-arrow"></span>
-        </a>
+        <div class="container container--lg">
+          <a href="#" class="notice__link">
+            Free Courses
+            <div class="notice__img">
+              <img src="./assets/images/star.png" alt="Star" />
+            </div>
+            Sale Ends Soon, Get It Now
+            <span class="icon-right-arrow"></span>
+          </a>
+        </div>
       </section>
       <header class="header">
         <div class="container">
@@ -40,11 +46,6 @@
                 </a>
               </div>
               <div class="nav__holder">
-                <a href="#" class="nav__opener" aria-label="nav opener">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </a>
                 <div class="nav__wrapper">
                   <nav class="header__nav">
                     <ul>
@@ -63,6 +64,11 @@
                 <li><a href="#">Sign Up</a></li>
                 <li><a href="#" class="btn btn--small">Login</a></li>
               </ul>
+              <a href="#" class="nav__opener" aria-label="nav opener">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
             </div>
           </div>
         </div>
@@ -97,43 +103,108 @@
           </section>
           <section class="brand-block py-0">
             <div class="container">
-              <ul class="brand__items">
-                <li class="brand__item">
-                  <a href="#">
-                    <img src="./assets/images/brand1.svg" alt="Zapier" />
-                  </a>
-                </li>
-                <li class="brand__item">
-                  <a href="#">
-                    <img src="./assets/images/brand2.svg" alt="Spotify" />
-                  </a>
-                </li>
-                <li class="brand__item">
-                  <a href="#">
-                    <img src="./assets/images/brand3.svg" alt="Zoom" />
-                  </a>
-                </li>
-                <li class="brand__item">
-                  <a href="#">
-                    <img src="./assets/images/brand4.svg" alt="amazon" />
-                  </a>
-                </li>
-                <li class="brand__item">
-                  <a href="#">
-                    <img src="./assets/images/brand5.svg" alt="Adobe" />
-                  </a>
-                </li>
-                <li class="brand__item">
-                  <a href="#">
-                    <img src="./assets/images/brand6.svg" alt="Notion" />
-                  </a>
-                </li>
-                <li class="brand__item">
-                  <a href="#">
-                    <img src="./assets/images/brand7.svg" alt="Netflix" />
-                  </a>
-                </li>
-              </ul>
+              <div class="swiper brand-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand1.svg" alt="Zapier" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand2.svg" alt="Spotify" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand3.svg" alt="Zoom" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand4.svg" alt="amazon" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand5.svg" alt="Adobe" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand6.svg" alt="Notion" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand7.svg" alt="Netflix" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand1.svg" alt="Zapier" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand2.svg" alt="Spotify" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand3.svg" alt="Zoom" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand4.svg" alt="amazon" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand5.svg" alt="Adobe" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand6.svg" alt="Notion" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brand__item">
+                      <a href="#">
+                        <img src="./assets/images/brand7.svg" alt="Netflix" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
           <section class="video-block">
@@ -1048,6 +1119,7 @@
     </div>
     <script src="./assets/vendors/fancybox/fancybox.umd.js"></script>
     <script src="./assets/vendors/accordion/accordion.min.js"></script>
+    <script src="./assets/vendors/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <a class="accessibility" href="#wrapper">Back to top</a>
   </body>

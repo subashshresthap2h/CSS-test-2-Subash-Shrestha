@@ -88,16 +88,46 @@ function initTabs() {
 
 function initAccordion() {
   const faqAccordions = document.querySelectorAll(".faq__accordion");
-  faqAccordions.forEach((element) => {
-    new Accordion(element, {
-      openOnInit: [0],
+  if(faqAccordions){
+    faqAccordions.forEach((element) => {
+      new Accordion(element, {
+        openOnInit: [0],
+      });
     });
-  });
+  }
 }
+
+function initSwiper() {
+  const brandSwipers = document.querySelectorAll(".brand-swiper");
+  if(brandSwipers){
+    brandSwipers.forEach((swiperContainer) => {
+      new Swiper(swiperContainer, {
+        slidesPerView: 3,
+        loop: true,
+        autoplay: {
+          delay: 0,
+        },
+        speed: 2000,
+
+        breakpoints: {
+          
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 7,
+          },
+        },
+      });
+    });
+  }
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
   initFancybox();
   initTabs();
   initAccordion();
+  initSwiper();
 });
