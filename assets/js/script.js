@@ -88,7 +88,7 @@ function initTabs() {
 
 function initAccordion() {
   const faqAccordions = document.querySelectorAll(".faq__accordion");
-  if(faqAccordions){
+  if (faqAccordions) {
     faqAccordions.forEach((element) => {
       new Accordion(element, {
         openOnInit: [0],
@@ -99,7 +99,7 @@ function initAccordion() {
 
 function initSwiper() {
   const brandSwipers = document.querySelectorAll(".brand-swiper");
-  if(brandSwipers){
+  if (brandSwipers) {
     brandSwipers.forEach((swiperContainer) => {
       new Swiper(swiperContainer, {
         slidesPerView: 3,
@@ -110,11 +110,16 @@ function initSwiper() {
         speed: 2000,
 
         breakpoints: {
-          
           768: {
             slidesPerView: 4,
           },
           1024: {
+            slidesPerView: 5,
+          },
+          1280: {
+            slidesPerView: 6,
+          },
+          1440: {
             slidesPerView: 7,
           },
         },
@@ -122,7 +127,6 @@ function initSwiper() {
     });
   }
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
